@@ -10,6 +10,11 @@ const NavBar = (): JSX.Element => {
 						Home
 					</Link>
 				</li>
+				<li>
+					<Link to="/login" className="text-3xl font-bold">
+						Login
+					</Link>
+				</li>
 			</ul>
 			<div className="flex basis-2/6 justify-items-end space-x-8 text-3xl">
 				<div>
