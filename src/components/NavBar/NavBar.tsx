@@ -1,8 +1,7 @@
 import { useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import userSlice from '../../store/slicers/user';
 import store, { RootState } from '../../store/store';
-import logo from '../../assets/logo.svg';
 import Logo from '../Logo/Logo';
 
 const NavBar = (): JSX.Element => {
