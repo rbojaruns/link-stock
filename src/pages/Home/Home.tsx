@@ -8,7 +8,6 @@ export default function Home() {
 				<div>A</div>
 				<div>B</div>
 			</div>
-			<div className="register"></div>
 		</div>
 	);
 }

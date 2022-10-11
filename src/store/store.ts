@@ -1,15 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { useDispatch } from 'react-redux';
 import user from './slicers/user';
 
 const store = configureStore({
+	devTools: true,
 	reducer: {
-		user,
+		user: user.reducer,
 	},
 });
 
-export type AppDispatch = typeof store.dispatch;
-
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export type RootState = ReturnType<typeof store.getState>;
 
 export default store;
